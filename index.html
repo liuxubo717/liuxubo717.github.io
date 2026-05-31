@@ -1,21 +1,21 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
+    <!-- Google Analytics 4 (GA4).
+         The old Universal Analytics property (UA-108114467-1) was shut down by Google in 2023
+         and no longer collects data. To get working stats + a visitor-location map:
+           1. Go to https://analytics.google.com  ->  Admin  ->  Create property (GA4).
+           2. Add a "Web" data stream for https://liuxubo717.github.io
+           3. Copy your Measurement ID (looks like G-XXXXXXXXXX).
+           4. Replace BOTH occurrences of G-XXXXXXXXXX below with that ID.
+         View the map in GA4 under: Reports -> User -> User attributes -> Demographic details
+         (or Reports -> Audiences / the location map card). -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-108114467-1', 'auto');
-        ga('send', 'pageview');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
     </script>
     <meta name=viewport content=“width=800”>
     <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
@@ -84,34 +84,21 @@
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 <tr>
                     <td width="67%" valign="middle">
-                        <p> I am a Research Scientist and the Speech Team Leader at Stability AI, London, UK. My Ph.D. supervisors are 
-                            <a href="https://www.surrey.ac.uk/people/wenwu-wang">Prof. Wenwu Wang</a> 
-                            and <a href="https://www.surrey.ac.uk/people/mark-plumbley">Prof. Mark D. Plumbley</a> at <a href="https://www.surrey.ac.uk/">University of Surrey</a>.
-                            My passion is to build AI models to understand the world with multi-modalities and engage with humans.
-                            Currently, I work on computational auditory scene analysis, multimodal content creation and large language models for audo/speech/music signals.
+                        <p style="text-align: justify;"> I am a Research Scientist at Meta Superintelligence Labs (MSL), where I currently work on multimodal LLMs.
+                            Before joining Meta, I was a Research Scientist &amp; Head of Speech at Stability AI, where I led the company's efforts in generative AI for speech.
+                            I obtained my PhD from the University of Surrey, focusing on the understanding, separation, and generation of audio signals.
                         </p>
-                        <p> Previously,  I interned with <a href="https://www.linkedin.com/in/fuegen/">Dr. Christian Fuegen</a>
-                            and <a href="https://www.linkedin.com/in/egor-lakomkin-1032b337/">Dr. Egor Lakomkin</a> at Meta AI, London. 
-                            During my PhD, I worked closely with <a href="https://qiuqiangkong.github.io/">Dr. Qiuqiang Kong</a> at the  
-                            <a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Hong Kong (CUHK)</a>.
-                            I graduated with First Class Honors from <a href="https://www.qmul.ac.uk/"></a>Queen Mary University of London</a> 
-                            in 2020 with a BSc in Telecommunications Engineering.
-                        </p>
-                        
-                        
-                            <p> I am open to research collaborations. Please feel free to email me.</p>
-
-                            <p>
+                        <p>
                                 <b>Email:</b>
-                                xubo.liu@surrey.ac.uk
+                                liuxubo717@gmail.com
                                 <br/>
                             </p>
 
                         <p>
                             <b>Personal:</b>
                             <a href="https://scholar.google.com/citations?user=-OlNYSgAAAAJ">[Google Scholar]</a> |
-                            <a href="https://github.com/liuxubo717">[Github]</a> | 
-                            <a href="https://www.linkedin.com/in/xubo-liu-533b62191/">[Linkedin]</a> | 
+                            <a href="https://github.com/liuxubo717">[Github]</a> |
+                            <a href="https://www.linkedin.com/in/xubo-liu-533b62191/">[Linkedin]</a> |
                             <a href="https://twitter.com/LiuXub">[Twitter]</a>
                         </p>
                     </td>
@@ -121,296 +108,537 @@
                 </tr>
             </table>
 
-            
+
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 <tr>
                     <td width="100%" valign="middle">
-                        <heading>Publications</heading>
+                        <heading>Selected Publications</heading>
                     </td>
                 </tr>
             </table>
-            
+
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                
-                <tr onmouseout="lemara_start()" onmouseover="lemara_stop()">
-                    <td width="35%">
-                        <div class="one">
-                            <div class="two" id='lemara'><img src='homepage_files/results.png' alt="sym" width="100%"
-                                                              style="border-style: none"></div>
-                        </div>
-                        <script type="text/javascript">
-                            function lemara_start() {
-                                document.getElementById('lemara').style.opacity = "0.9";
-                            }
+                <tr>
+                    <td valign="top">
+                        <p style="text-align: justify; margin-top:0;">
+                            My research centres on machine learning for audio, speech, and language. The selected publications below are grouped by topic; click each heading to expand. For the complete and up-to-date list, please see my <a href="https://scholar.google.com/citations?user=-OlNYSgAAAAJ">Google Scholar</a>.
+                        </p>
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">Audio Tokenizer &amp; Codec</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>Scaling Speech Tokenizers with Diffusion Autoencoders</strong><br>
+                                    Yuancheng Wang, Zhenyu Tang, Yun Wang, Arthur Hinsvark, Yingru Liu, Yinghao Aaron Li, Kainan Peng, Junyi Ao, Mingbo Ma, Mike Seltzer, Qing He, <b><u>Xubo Liu</u></b><br>
+                                    International Conference on Learning Representations (ICLR), 2026
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Scaling Transformers for Low-Bitrate High-Quality Speech Coding</strong><br>
+                                    Julian D Parker*, Anton Smirnov, Jordi Pons, CJ Carr, Zack Zukowski, Zach Evans, <b><u>Xubo Liu</u></b>*<br>
+                                    International Conference on Learning Representations (ICLR), 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling</strong><br>
+                                    Dongchao Yang, Songxiang Liu, Haohan Guo, Jiankun Zhao, Yuanyuan Wang, Helin Wang, Zeqian Ju, <b><u>Xubo Liu</u></b>, Xueyuan Chen, Xu Tan, Xixin Wu, Helen Meng<br>
+                                    Forty-second International Conference on Machine Learning (ICML), 2025
+                                </li>
+                                <li>
+                                    <strong>Learning Source Disentanglement in Neural Audio Codec</strong><br>
+                                    Xiaoyu Bie, <b><u>Xubo Liu</u></b>, Gaël Richard<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025
+                                </li>
+                            </ul>
+                        </details>
 
-                            function lemara_stop() {
-                                document.getElementById('lemara').style.opacity = "1";
-                            }
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">Audio Generation</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>DreamAudio: Customized Text-to-Audio Generation with Diffusion Models</strong><br>
+                                    Yi Yuan, <b><u>Xubo Liu</u></b>, Haohe Liu, Xiyuan Kang, Zhuo Chen, Yuxuan Wang, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2026
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>RiTTA: Modeling Event Relations in Text-to-Audio Generation</strong><br>
+                                    Yuhang He, Yash Jain, <b><u>Xubo Liu</u></b>, Andrew Markham, Vibhav Vineet<br>
+                                    The 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Sound-VECaps: Improving Audio Generation With Visual Enhanced Captions</strong><br>
+                                    Yi Yuan, Dongya Jia, Xiaobin Zhuang, Yuanzhe Chen, Zhengxi Liu, Zhuo Chen, Yuping Wang, Yuxuan Wang, <b><u>Xubo Liu</u></b>, Xiyuan Kang, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>WavJourney: Compositional Audio Creation with Large Language Models</strong><br>
+                                    <b><u>Xubo Liu</u></b>, Zhongkai Zhu, Haohe Liu, Yi Yuan, Meng Cui, Qiushi Huang, Jinhua Liang, Yin Cao, Qiuqiang Kong, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>AudioLDM 2: Learning Holistic Audio Generation with Self-supervised Pretraining</strong><br>
+                                    Haohe Liu, Yi Yuan, <b><u>Xubo Liu</u></b>, Xinhao Mei, Qiuqiang Kong, Qiao Tian, Yuping Wang, Wenwu Wang, Yuxuan Wang, Mark D Plumbley<br>
+                                    IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Retrieval-Augmented Text-to-Audio Generation</strong><br>
+                                    Yi Yuan, Haohe Liu, <b><u>Xubo Liu</u></b>, Qiushi Huang, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>ComposerX: Multi-Agent Symbolic Music Composition with LLMs</strong><br>
+                                    Qixin Deng, Qikai Yang, Ruibin Yuan, Yipeng Huang, Yi Wang, <b><u>Xubo Liu</u></b>, Zeyue Tian, Jiahao Pan, Ge Zhang, Hanfeng Lin, Yizhi Li, Yinghao Ma, Jie Fu, Chenghua Lin, Emmanouil Benetos, Wenwu Wang, Guangyu Xia, Wei Xue, Yike Guo<br>
+                                    International Society for Music Information Retrieval (ISMIR), 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>WavCraft: Audio Editing and Generation with Natural Language Prompts</strong><br>
+                                    Jinhua Liang, Huan Zhang, Haohe Liu, Yin Cao, Qiuqiang Kong, <b><u>Xubo Liu</u></b>, Wenwu Wang, Mark D Plumbley, Huy Phan, Emmanouil Benetos<br>
+                                    ICLR 2024 Workshop on Large Language Model (LLM) Agents, 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>AudioLDM: Text-to-Audio Generation with Latent Diffusion Models</strong><br>
+                                    Haohe Liu, Zehua Chen, Yi Yuan, Xinhao Mei, <b><u>Xubo Liu</u></b>, Danilo Mandic, Wenwu Wang, Mark D Plumbley<br>
+                                    Proceedings of the 40th International Conference on Machine Learning (ICML), 2023
+                                </li>
+                                <li>
+                                    <strong>Conditional Sound Generation Using Neural Discrete Time-Frequency Representation Learning</strong><br>
+                                    <b><u>Xubo Liu</u></b>, Turab Iqbal, Jinzheng Zhao, Qiushi Huang, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE 31st International Workshop on Machine Learning for Signal Processing (MLSP), 2021
+                                </li>
+                            </ul>
+                        </details>
 
-                            friendly_stop()
-                        </script>
-                    </td>
-                    <td valign="top" width="65%">
-                        <heading>Separate Anything You Describe</heading>
-                        <br><b>Xubo Liu</b>, Qiuqiang Kong, Yan Zhao, Haohe Liu, Yi Yuan, Yuzhuo Liu, Rui Xia, Yuxuan Wang, Mark D Plumbley, Wenwu Wang<br>
-                        <em>Transactions on Audio, Speech and Language Processing (TASLP)<br></em>
-                        <a href="https://arxiv.org/pdf/2308.05037.pdf">paper</a> |
-                        <a href="https://audio-agi.github.io/Separate-Anything-You-Describe/">project</a> |
-                        <a href="https://github.com/Audio-AGI/AudioSep/">code
-                        <img src="https://img.shields.io/github/stars/Audio-AGI/AudioSep?style=social" alt="GitHub stars" width="12%"></a>
-                        <br>
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">Audio Source Separation</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>TMS: Text-Prompted Multi-channel Speech Separation on Smart Glasses</strong><br>
+                                    Yang Liu, Li Wan, Yiteng Huang, Yifeng Fan, Haohe Liu, Xinhao Mei, <b><u>Xubo Liu</u></b>, Ming Sun, Yangyang Shi, Saurabh Adya, Florian Metze, Ariya Rastrow<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>FlowSep: Language-Queried Sound Separation with Rectified Flow Matching</strong><br>
+                                    Yi Yuan, <b><u>Xubo Liu</u></b>, Haohe Liu, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Separate Anything You Describe</strong><br>
+                                    <b><u>Xubo Liu</u></b>, Qiuqiang Kong, Yan Zhao, Haohe Liu, Yi Yuan, Yuzhuo Liu, Rui Xia, Yuxuan Wang, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>A Reference-free Metric for Language-Queried Audio Source Separation using Contrastive Language-Audio Pretraining</strong><br>
+                                    Feiyang Xiao, Jian Guan, Qiaoxi Zhu, <b><u>Xubo Liu</u></b>, Wenbo Wang, Shuhan Qi, Kejia Zhang, Jianyuan Sun, Wenwu Wang<br>
+                                    Workshop on Detection and Classification of Acoustic Scenes and Events (DCASE), 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Audio Prompt Tuning for Universal Sound Separation</strong><br>
+                                    Yuzhuo Liu, <b><u>Xubo Liu</u></b>, Yan Zhao, Yuanyuan Wang, Rui Xia, Pingchuan Tain, Yuxuan Wang<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Universal Sound Separation with Self-Supervised Audio Masked Autoencoder</strong><br>
+                                    Junqi Zhao, <b><u>Xubo Liu</u></b>, Jinzheng Zhao, Yi Yuan, Qiuqiang Kong, Mark D Plumbley, Wenwu Wang<br>
+                                    European Signal Processing Conference (EUSIPCO), 2024
+                                </li>
+                                <li>
+                                    <strong>Separate What You Describe: Language-Queried Audio Source Separation</strong><br>
+                                    <b><u>Xubo Liu</u></b>, Haohe Liu, Qiuqiang Kong, Xinhao Mei, Jinzheng Zhao, Qiushi Huang, Mark D Plumbley, Wenwu Wang<br>
+                                    INTERSPEECH, 2022
+                                </li>
+                            </ul>
+                        </details>
 
-                        <strong>Media coverage: </strong> <br>
-                        <a href="https://twitter.com/Gradio/status/1712854634568761733">
-                            <img src="media/gradio.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://www.unite.ai/audiosep-separate-anything-you-describe/">
-                            <img src="media/uniteai.jpg"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://replicate.com/cjwbw/audiosep">
-                            <img src="media/replicate.jpg"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://www.thedeepview.co/p/filtering-noise">
-                            <img src="media/deepview.jpg"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://www.marktechpost.com/2023/08/14/master-key-to-audio-source-separation-introducing-audiosep-to-separate-anything-you-describe/">
-                            <img src="media/techpost.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://staffing.archetyp.jp/magazine/audiosep/">
-                            <img src="media/staffing.jpg"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a> 
-                        <a href="https://cybered.io/insights/the-evolution-of-sound/">
-                            <img src="media/cyber.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://aipressroom.com/audiosep-separate-anything-you-describe/?feed_id=6414&_unique_id=652f9fed0139b">
-                            <img src="media/pressroom.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://medium.aifastcash.com/introducing-audiosep-a-model-for-sound-extraction-and-separation-using-natural-language-c543b3c8ca1b">
-                            <img src="media/medium.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">Voice Quality Enhancement</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>VoiceFixer: A Unified Framework for High-Fidelity Speech Restoration</strong><br>
+                                    Haohe Liu*, <b><u>Xubo Liu</u></b>*, Qiuqiang Kong, Qiao Tian, Yan Zhao, DeLiang Wang<br>
+                                    INTERSPEECH, 2022
+                                </li>
+                                <li>
+                                    <strong>Neural Vocoder is All You Need for Speech Super-resolution</strong><br>
+                                    Haohe Liu, Woosung Choi, <b><u>Xubo Liu</u></b>, Qiuqiang Kong, Qiao Tian, DeLiang Wang<br>
+                                    INTERSPEECH, 2022
+                                </li>
+                            </ul>
+                        </details>
 
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">Audio Captioning</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>Towards Generating Diverse Audio Captions via Adversarial Training</strong><br>
+                                    Xinhao Mei, <b><u>Xubo Liu</u></b>, Jianyuan Sun, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Visually-Aware Audio Captioning with Adaptive Audio-Visual Attention</strong><br>
+                                    <b><u>Xubo Liu</u></b>, Qiushi Huang, Xinhao Mei, Haohe Liu, Qiuqiang Kong, Jianyuan Sun, Shengchen Li, Tom Ko, Yu Zhang, Lilian H Tang, Mark D Plumbley, Volkan Kılıç, Wenwu Wang<br>
+                                    INTERSPEECH, 2023
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Knowledge Distillation for Efficient Audio-Visual Video Captioning</strong><br>
+                                    Özkan Çaylı, <b><u>Xubo Liu</u></b>, Volkan Kılıç, Wenwu Wang<br>
+                                    European Signal Processing Conference (EUSIPCO), 2023
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Dual Transformer Decoder based Features Fusion Network for Automated Audio Captioning</strong><br>
+                                    Jianyuan Sun, <b><u>Xubo Liu</u></b>, Xinhao Mei, Volkan Kılıç, Mark D Plumbley, Wenwu Wang<br>
+                                    INTERSPEECH, 2023
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Automated Audio Captioning: An Overview of Recent Progress and New Challenges</strong><br>
+                                    Xinhao Mei, <b><u>Xubo Liu</u></b>, Mark D Plumbley, Wenwu Wang<br>
+                                    EURASIP Journal on Audio, Speech, and Music Processing, 2022
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Diverse Audio Captioning via Adversarial Training</strong><br>
+                                    Xinhao Mei, <b><u>Xubo Liu</u></b>, Jianyuan Sun, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2022
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Leveraging Pre-trained BERT for Audio Captioning</strong><br>
+                                    <b><u>Xubo Liu</u></b>, Xinhao Mei, Qiushi Huang, Jianyuan Sun, Jinzheng Zhao, Haohe Liu, Mark D Plumbley, Volkan Kılıç, Wenwu Wang<br>
+                                    European Signal Processing Conference (EUSIPCO), 2022
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>An Encoder-Decoder Based Audio Captioning System With Transfer and Reinforcement Learning</strong><br>
+                                    Xinhao Mei, Qiushi Huang, <b><u>Xubo Liu</u></b>, Gengyun Chen, Jingqian Wu, Yusong Wu, Jinzheng Zhao, Shengchen Li, Tom Ko, H Lilian Tang, Xi Shao, Mark D Plumbley, Wenwu Wang<br>
+                                    Proceedings of the Detection and Classification of Acoustic Scenes and Events (DCASE), 2021
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>CL4AC: A Contrastive Loss for Audio Captioning</strong><br>
+                                    <b><u>Xubo Liu</u></b>, Qiushi Huang, Xinhao Mei, Tom Ko, H Lilian Tang, Mark D Plumbley, Wenwu Wang<br>
+                                    Proceedings of the Detection and Classification of Acoustic Scenes and Events (DCASE), 2021
+                                </li>
+                                <li>
+                                    <strong>Audio Captioning Transformer</strong><br>
+                                    Xinhao Mei, <b><u>Xubo Liu</u></b>, Qiushi Huang, Mark D Plumbley, Wenwu Wang<br>
+                                    Proceedings of the Detection and Classification of Acoustic Scenes and Events (DCASE), 2021
+                                </li>
+                            </ul>
+                        </details>
+
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">Audio Classification</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation</strong><br>
+                                    Yuanjian Chen, Yang Xiao, Han Yin, Yadong Guan, <b><u>Xubo Liu</u></b><br>
+                                    IEEE Signal Processing Letters, 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Acoustic Prompt Tuning: Empowering Large Language Models with Audition Capabilities</strong><br>
+                                    Jinhua Liang, <b><u>Xubo Liu</u></b>, Wenwu Wang, Mark D Plumbley, Huy Phan, Emmanouil Benetos<br>
+                                    IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>MASV: Speaker Verification with Global and Local Context Mamba</strong><br>
+                                    Yang Liu, Li Wan, Yiteng Huang, Ming Sun, Xinhao Mei, <b><u>Xubo Liu</u></b>, Yangyang Shi, Florian Metze<br>
+                                    INTERSPEECH, 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Disentangling Hierarchical Features for Anomalous Sound Detection Under Domain Shift</strong><br>
+                                    Jian Guan, Jiantong Tian, Qiaoxi Zhu, Feiyang Xiao, Hejing Zhang, <b><u>Xubo Liu</u></b><br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>T-CLAP: Temporal-Enhanced Contrastive Language-Audio Pretraining</strong><br>
+                                    Yi Yuan, Zhuo Chen, <b><u>Xubo Liu</u></b>, Haohe Liu, Xuenan Xu, Dongya Jia, Yuanzhe Chen, Mark D Plumbley, Wenwu Wang<br>
+                                    The IEEE International Workshop on Machine Learning for Signal Processing (MLSP), 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>First-Shot Unsupervised Anomalous Sound Detection with Unknown Anomalies Estimated by Metadata-Assisted Audio Generation</strong><br>
+                                    Hejing Zhang, Qiaoxi Zhu, Jian Guan, Haohe Liu, Feiyang Xiao, Jiantong Tian, Xinhao Mei, <b><u>Xubo Liu</u></b>, Wenwu Wang<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Learning Temporal Resolution in Spectrogram for Audio Classification</strong><br>
+                                    Haohe Liu, <b><u>Xubo Liu</u></b>, Qiuqiang Kong, Wenwu Wang, Mark D Plumbley<br>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>CM-PIE: Cross-modal Perception for Interactive-enhanced Audio-Visual Video Parsing</strong><br>
+                                    Yaru Chen, Ruohao Guo, <b><u>Xubo Liu</u></b>, Peipei Wu, Guangyao Li, Zhenbo Li, Wenwu Wang<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Adapting Language-Audio Models as Few-Shot Audio Learners</strong><br>
+                                    Jinhua Liang, <b><u>Xubo Liu</u></b>, Haohe Liu, Huy Phan, Emmanouil Benetos, Mark D Plumbley, Wenwu Wang<br>
+                                    INTERSPEECH, 2023
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Ontology-aware Learning and Evaluation for Audio Tagging</strong><br>
+                                    Haohe Liu, Qiuqiang Kong, <b><u>Xubo Liu</u></b>, Xinhao Mei, Wenwu Wang, Mark D Plumbley<br>
+                                    INTERSPEECH, 2023
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Simple Pooling Front-ends For Efficient Audio Classification</strong><br>
+                                    <b><u>Xubo Liu</u></b>, Haohe Liu, Qiuqiang Kong, Xinhao Mei, Mark D Plumbley, Wenwu Wang<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2023
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Continual Learning for On-Device Environmental Sound Classification</strong><br>
+                                    Yang Xiao*, <b><u>Xubo Liu</u></b>*, James King, Arshdeep Singh, Eng Siong Chng, Mark D Plumbley, Wenwu Wang<br>
+                                    Proceedings of the Detection and Classification of Acoustic Scenes and Events (DCASE), 2022
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Segment-level Metric Learning for Few-shot Bioacoustic Event Detection</strong><br>
+                                    Haohe Liu, <b><u>Xubo Liu</u></b>, Xinhao Mei, Qiuqiang Kong, Wenwu Wang, Mark D Plumbley<br>
+                                    Proceedings of the Detection and Classification of Acoustic Scenes and Events (DCASE), 2022
+                                </li>
+                                <li>
+                                    <strong>Token-Level Supervised Contrastive Learning for Punctuation Restoration</strong><br>
+                                    Qiushi Huang, Tom Ko, H Lilian Tang, <b><u>Xubo Liu</u></b>, Bo Wu<br>
+                                    INTERSPEECH, 2021
+                                </li>
+                            </ul>
+                        </details>
+
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">Multimodal Speech Recognition</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>Omni-AVSR: Towards Unified Multimodal Speech Recognition with Large Language Models</strong><br>
+                                    Umberto Cappellazzo, <b><u>Xubo Liu</u></b>, Pingchuan Ma, Stavros Petridis, Maja Pantic<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>MoME: Mixture of Matryoshka Experts for Audio-Visual Speech Recognition</strong><br>
+                                    Umberto Cappellazzo, Minsu Kim, Pingchuan Ma, Honglie Chen, <b><u>Xubo Liu</u></b>, Stavros Petridis, Maja Pantic<br>
+                                    The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS), 2025
+                                </li>
+                                <li>
+                                    <strong>SynthVSR: Scaling Up Visual Speech Recognition with Synthetic Supervision</strong><br>
+                                    <b><u>Xubo Liu</u></b>, Egor Lakomkin, Konstantinos Vougioukas, Pingchuan Ma, Honglie Chen, Ruiming Xie, Morrie Doulaty, Niko Moritz, Jachym Kolar, Stavros Petridis, Maja Pantic, Christian Fuegen<br>
+                                    IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023
+                                </li>
+                            </ul>
+                        </details>
+
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">Personalized Dialogue Generation</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>Selective Prompting Tuning for Personalized Conversations with LLMs</strong><br>
+                                    Qiushi Huang, <b><u>Xubo Liu</u></b>, Tom Ko, Bo Wu, Wenwu Wang, Yu Zhang, Lilian Tang<br>
+                                    The 62nd Annual Meeting of the Association for Computational Linguistics (ACL), 2024
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Learning Retrieval Augmentation for Personalized Dialogue Generation</strong><br>
+                                    Qiushi Huang, Shuai Fu, <b><u>Xubo Liu</u></b>, Wenwu Wang, Tom Ko, Yu Zhang, Lilian Tang<br>
+                                    The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2023
+                                </li>
+                                <li>
+                                    <strong>Personalized Dialogue Generation with Persona-Adaptive Attention</strong><br>
+                                    Qiushi Huang, Yu Zhang, Tom Ko, <b><u>Xubo Liu</u></b>, Bo Wu, Wenwu Wang, Lilian Tang<br>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2023
+                                </li>
+                            </ul>
+                        </details>
+
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">Speaker Localization &amp; Tracking</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>Visually Assisted Self-supervised Audio Speaker Localization and Tracking</strong><br>
+                                    Jinzheng Zhao, Peipei Wu, Shidrokh Goudarzi, <b><u>Xubo Liu</u></b>, Jianyuan Sun, Yong Xu, Wenwu Wang<br>
+                                    European Signal Processing Conference (EUSIPCO), 2022
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Audio Visual Multi-Speaker Tracking with Improved GCF and PMBM Filter</strong><br>
+                                    Jinzheng Zhao, Peipei Wu, <b><u>Xubo Liu</u></b>, Shidrokh Goudarzi, Haohe Liu, Yong Xu, Wenwu Wang<br>
+                                    INTERSPEECH, 2022
+                                </li>
+                                <li>
+                                    <strong>Audio-visual Tracking of Multiple Speakers via A PMBM Filter</strong><br>
+                                    Jinzheng Zhao, Peipei Wu, <b><u>Xubo Liu</u></b>, Yong Xu, Lyudmila Mihaylova, Simon Godsill, Wenwu Wang<br>
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2022
+                                </li>
+                            </ul>
+                        </details>
+
+                        <details style="margin-bottom:12px;">
+                            <summary style="cursor:pointer; font-family:'Titillium Web', Verdana, Helvetica, sans-serif; font-size:17px; font-weight:800;">AI for Aquaculture</summary>
+                            <ul>
+                                <li style="margin-top:8px; margin-bottom:14px;">
+                                    <strong>Fish tracking, counting, and behaviour analysis in digital aquaculture: a comprehensive survey</strong><br>
+                                    Meng Cui, <b><u>Xubo Liu</u></b>, Haohe Liu, Jinzheng Zhao, Daoliang Li, Wenwu Wang<br>
+                                    Reviews in Aquaculture, 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Audio-Visual Class-Incremental Learning for Fish Feeding Intensity Assessment in Aquaculture</strong><br>
+                                    Meng Cui, Xianghu Yue, Xinyuan Qian, Jinzheng Zhao, Haohe Liu, <b><u>Xubo Liu</u></b>, Daoliang Li, Wenwu Wang<br>
+                                    arXiv preprint arXiv:2504.15171, 2025
+                                </li>
+                                <li style="margin-bottom:14px;">
+                                    <strong>Multimodal Fish Feeding Intensity Assessment in Aquaculture</strong><br>
+                                    Meng Cui, <b><u>Xubo Liu</u></b>, Haohe Liu, Zhuangzhuang Du, Tao Chen, Guoping Lian, Daoliang Li, Wenwu Wang<br>
+                                    IEEE Transactions on Automation Science and Engineering, 2024
+                                </li>
+                                <li>
+                                    <strong>Fish Feeding Intensity Assessment in Aquaculture: A New Audio Dataset AFFIA3K and A Deep Learning Algorithm</strong><br>
+                                    Meng Cui*, <b><u>Xubo Liu</u></b>*, Jinzheng Zhao, Jianyuan Sun, Guoping Lian, Tao Chen, Mark D. Plumbley, Daoliang Li, Wenwu Wang<br>
+                                    IEEE 32nd International Workshop on Machine Learning for Signal Processing (MLSP), 2022
+                                </li>
+                            </ul>
+                        </details>
+                        <p><font size="2">* indicates equal contribution.</font></p>
                     </td>
                 </tr>
+            </table>
 
-                <tr onmouseout="lemara_start()" onmouseover="lemara_stop()">
-                    <td width="35%">
-                        <div class="one">
-                            <div class="two" id='lemara'><img src='homepage_files/WavJourney.png' alt="sym" width="100%"
-                                                              style="border-style: none"></div>
-                        </div>
-                        <script type="text/javascript">
-                            function lemara_start() {
-                                document.getElementById('lemara').style.opacity = "0.9";
-                            }
-
-                            function lemara_stop() {
-                                document.getElementById('lemara').style.opacity = "1";
-                            }
-
-                            friendly_stop()
-                        </script>
-                    </td>
-                    <td valign="top" width="65%">
-                        <heading>WavJourney: Compositional Audio Creation with Large Language Models</heading>
-                        <br><b>Xubo Liu</b>, Zhongkai Zhu, Haohe Liu, Yi Yuan, Meng Cui, Qiushi Huang, Jinhua Liang, Yin Cao, Qiuqiang Kong, Mark D Plumbley, Wenwu Wang<br>
-                        <em>arXiv:2307.14335<br></em>
-                        <a href="https://arxiv.org/pdf/2307.14335.pdf">paper</a> |
-                        <a href="https://audio-agi.github.io/WavJourney_demopage/">project</a> |
-                        <a href="https://github.com/Audio-AGI/WavJourney">code
-                            <img src="https://img.shields.io/github/stars/Audio-AGI/WavJourney?style=social" alt="GitHub stars" width="12%"></a>
-                        </a><br><br>
-
-                        <strong>Media coverage: </strong> <br>
-                        <a href="https://twitter.com/Gradio/status/1697258152696365162">
-                            <img src="media/gradio.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://www.marktechpost.com/2023/09/09/meet-wavjourney-an-ai-framework-for-compositional-audio-creation-with-large-language-models/">
-                            <img src="media/techpost.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://www.kdnuggets.com/wavjourney-a-journey-into-the-world-of-audio-storyline-generation">
-                            <img src="media/kd.jpg"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://www.e2enetworks.com/blog/wavjourney-compositional-audio-creation-with-large-language-models">
-                            <img src="media/cloud.jpg"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://medium.com/@multiplatform.ai/wavjourney-transforming-multimedia-creation-with-llms-787a698ec97c">
-                            <img src="media/medium.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://isp.page/news/the-power-of-multi-modal-ai-in-creating-dynamic-multimedia-content/">
-                            <img src="media/isp.jpg"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://www.cjco.com.au/article/news/revolutionizing-multimedia-content-creation-the-potential-of-large-language-models-and-multi-modal-ai-in-audio-narrative-design/">
-                            <img src="media/cjco.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href="https://www.techno-edge.net/article/2023/07/31/1671.html">
-                            <img src="media/technoedge.png"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
-                        <a href=" https://hub.baai.ac.cn/view/28146">
-                            <img src="media/zhiyuan.jpg"  alt="media logo" height="18" style="border:1px solid #D3D3D3;" hspace="0"></a>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td>
+                            <heading>Education</heading><br><br>
+                            <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:22px;">
+                                <tr>
+                                    <td width="150" align="center" valign="middle">
+                                        <img src="homepage_files/University_of_Surrey_coat_of_arms.svg.png" height="95"><br>
+                                        <font size="2">2020&ndash;2024</font>
+                                    </td>
+                                    <td valign="middle" style="padding-left:20px;">
+                                        <strong>Ph.D. in Vision, Speech and Signal Processing</strong><br>
+                                        <a href="https://www.surrey.ac.uk/">University of Surrey</a>, Guildford, UK
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:10px;">
+                                <tr>
+                                    <td width="150" align="center" valign="middle">
+                                        <img src="homepage_files/qmul.jpg" height="95"><br>
+                                        <font size="2">2016&ndash;2020</font>
+                                    </td>
+                                    <td valign="middle" style="padding-left:20px;">
+                                        <strong>B.Sc. in Telecommunications Engineering (First Class Honours)</strong><br>
+                                        <a href="https://www.qmul.ac.uk/">Queen Mary University of London</a>, London, UK
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
 
 
-
-                <tr onmouseout="lemara_start()" onmouseover="lemara_stop()">
-                    <td width="35%">
-                        <div class="one">
-                            <div class="two" id='lemara'><img src='homepage_files/synthvsr.png' alt="sym" width="100%"
-                                                                style="border-style: none"></div>
-                        </div>
-                        <script type="text/javascript">
-                            function lemara_start() {
-                                document.getElementById('lemara').style.opacity = "0.9";
-                            }
-
-                            function lemara_stop() {
-                                document.getElementById('lemara').style.opacity = "1";
-                            }
-
-                            friendly_stop()
-                        </script>
-                    </td>
-                    <td valign="top" width="65%">
-                        <heading>SynthVSR: Scaling Up Visual Speech Recognition with Synthetic Supervision</heading>
-                        <br><b>Xubo Liu</b>, Egor Lakomkin, Konstantinos Vougioukas, Pingchuan Ma, Honglie Chen, Ruiming Xie, Morrie Doulaty, Niko Moritz, Jachym Kolar, Stavros Petridis, Maja Pantic, Christian Fuegen<br>
-                        <em>CVPR 2023<br></em>
-                        <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_SynthVSR_Scaling_Up_Visual_Speech_Recognition_With_Synthetic_Supervision_CVPR_2023_paper.pdf">paper</a> |
-                        <a href="https://liuxubo717.github.io/SynthVSR/">project</a> 
-
-                    </td>
-                </tr>
-
-
-                <tr onmouseout="lemara_start()" onmouseover="lemara_stop()">
-                    <td width="35%">
-                        <div class="one">
-                            <div class="two" id='lemara'><img src='homepage_files/VACT.jpg' alt="sym" width="100%"
-                                                                style="border-style: none"></div>
-                        </div>
-                        <script type="text/javascript">
-                            function lemara_start() {
-                                document.getElementById('lemara').style.opacity = "0.9";
-                            }
-
-                            function lemara_stop() {
-                                document.getElementById('lemara').style.opacity = "1";
-                            }
-
-                            friendly_stop()
-                        </script>
-                    </td>
-                    <td valign="top" width="65%">
-                        <heading>Visually-Aware Audio Captioning with Adaptive Audio-Visual Attention</heading>
-                        <br><b>Xubo Liu</b>, Qiushi Huang, Xinhao Mei, Haohe Liu, Qiuqiang Kong, Jianyuan Sun, Shengchen Li, Tom Ko, Yu Zhang, Lilian H Tang, Mark D Plumbley, Volkan Kılıç, Wenwu Wang<br>
-                        <em>Interspeech 2023<br></em>
-                        <a href="https://arxiv.org/pdf/2210.16428.pdf">paper</a> |
-                        <a href=" https://github.com/liuxubo717/V-ACT">code
-                            <img src="https://img.shields.io/github/stars/liuxubo717/V-ACT?style=social" alt="GitHub stars" width="12%"> 
-                        </a>
-                       
-                    </td>
-                </tr>
-
-                <tr onmouseout="lemara_start()" onmouseover="lemara_stop()">
-                    <td width="35%">
-                        <div class="one">
-                            <div class="two" id='lemara'><img src='homepage_files/simpf.jpg' alt="sym" width="100%"
-                                                                style="border-style: none"></div>
-                        </div>
-                        <script type="text/javascript">
-                            function lemara_start() {
-                                document.getElementById('lemara').style.opacity = "0.9";
-                            }
-
-                            function lemara_stop() {
-                                document.getElementById('lemara').style.opacity = "1";
-                            }
-
-                            friendly_stop()
-                        </script>
-                    </td>
-                    <td valign="top" width="65%">
-                        <heading>Simple Pooling Front-ends For Efficient Audio Classification</heading>
-                        <br><b>Xubo Liu</b>, Haohe Liu, Qiuqiang Kong, Xinhao Mei, Mark D. Plumbley, Wenwu Wang<br>
-                        <em>ICASSP 2023<br></em>
-                        <a href="https://arxiv.org/pdf/2210.00943.pdf">paper</a> |
-                        <a href="https://github.com/liuxubo717/SimPFs">code
-                            <img src="https://img.shields.io/github/stars/liuxubo717/SimPFs?style=social" alt="GitHub stars" width="12%"> 
-                        </a> 
-
-                    </td>
-                </tr>
-
-                <tr onmouseout="lemara_start()" onmouseover="lemara_stop()">
-                    <td width="35%">
-                        <div class="one">
-                            <div class="two" id='lemara'><img src='homepage_files/lass.jpg' alt="sym" width="100%"
-                                                                style="border-style: none"></div>
-                        </div>
-                        <script type="text/javascript">
-                            function lemara_start() {
-                                document.getElementById('lemara').style.opacity = "0.9";
-                            }
-
-                            function lemara_stop() {
-                                document.getElementById('lemara').style.opacity = "1";
-                            }
-
-                            friendly_stop()
-                        </script>
-                    </td>
-                    <td valign="top" width="65%">
-                        <heading>Separate What You Describe: Language-Queried Audio Source Separation</heading>
-                        <br><b>Xubo Liu</b>, Haohe Liu, Qiuqiang Kong, Xinhao Mei, Jinzheng Zhao, Qiushi Huang, Mark D Plumbley, Wenwu Wang<br>
-                        <em>Interspeech 2022<br></em>
-                        <a href="https://arxiv.org/pdf/2203.15147.pdf">paper</a> |
-                        <a href="https://liuxubo717.github.io/LASS-demopage/">project</a> |
-                        <a href="https://github.com/liuxubo717/LASS">code
-                            <img src="https://img.shields.io/github/stars/liuxubo717/LASS?style=social" alt="GitHub stars" width="12%"> 
-                        </a> 
-
-                    </td>
-                </tr>
-
-                <tr onmouseout="lemara_start()" onmouseover="lemara_stop()">
-                    <td width="35%">
-                        <div class="one">
-                            <div class="two" id='lemara'><img src='homepage_files/mlsp.jpg' alt="sym" width="100%"
-                                                                style="border-style: none"></div>
-                        </div>
-                        <script type="text/javascript">
-                            function lemara_start() {
-                                document.getElementById('lemara').style.opacity = "0.9";
-                            }
-
-                            function lemara_stop() {
-                                document.getElementById('lemara').style.opacity = "1";
-                            }
-
-                            friendly_stop()
-                        </script>
-                    </td>
-                    <td valign="top" width="65%">
-                        <heading>Conditional Sound Generation Using Neural Discrete Time-Frequency Representation Learning</heading>
-                        <br><b>Xubo Liu</b>, Turab Iqbal, Jinzheng Zhao, Qiushi Huang, Mark D Plumbley, Wenwu Wang<br>
-                        <em>MLSP 2021<br></em>
-                        <a href="https://arxiv.org/pdf/2107.09998.pdf">paper</a> |
-                        <a href="https://github.com/liuxubo717/sound_generation">code
-                            <img src="https://img.shields.io/github/stars/liuxubo717/sound_generation?style=social" alt="GitHub stars" width="12%"> 
-                        </a> 
-
-                    </td>
-                </tr>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td>
+                            <heading>Employment</heading><br><br>
+                            <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:22px;">
+                                <tr>
+                                    <td width="150" align="center" valign="middle">
+                                        <img src="homepage_files/meta-6871457_960_720.png" height="95"><br>
+                                        <font size="2">2025&ndash;Present</font>
+                                    </td>
+                                    <td valign="middle" style="padding-left:20px;">
+                                        <strong>Research Scientist</strong><br>
+                                        Meta Superintelligence Labs, London, UK
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:10px;">
+                                <tr>
+                                    <td width="150" align="center" valign="middle">
+                                        <img src="homepage_files/stability_ai_logo.jpeg" height="95"><br>
+                                        <font size="2">2024&ndash;2025</font>
+                                    </td>
+                                    <td valign="middle" style="padding-left:20px;">
+                                        <strong>Research Scientist &amp; Head of Speech</strong><br>
+                                        Stability AI, London, UK
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
 
                 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                     <tr>
                         <td>
                             <heading>Professional Services</heading><br><br>
-                            Special Session Chair of <a href="https://cmsworkshops.com/EUSIPCO2023/view_session.php?SessionID=1060
-                            ">Multimodal Learning for Audio and Language"</a> at EUSIPCO 2023<br>
-                            Journal reviewer:  IEEE/ACM Transactions on Audio, Speech and Language Processing (TASLP), IEEE Signal Processing Letters, International Journal of Computer Vision (IJCV)<br>
-                            Conference reviewer: ECCV (24), ICML (24), CVPR (24), EMNLP (23), ICASSP (23-24), INTERSPEECH (22-24), MLSP (23)<br>
+                            <strong>Area Chair:</strong>
+                            <ul>
+                                <li>ICLR 2026, NeurIPS 2026</li>
+                            </ul>
+                            <strong>Journal Reviewer:</strong>
+                            <ul>
+                                <li>IEEE/ACM Transactions on Audio, Speech, and Language Processing</li>
+                                <li>IEEE Signal Processing Letters</li>
+                                <li>International Journal of Computer Vision</li>
+                            </ul>
+                            <strong>Conference Reviewer:</strong>
+                            <ul>
+                                <li>ICLR 2025, ICML 2024&ndash;2025, CVPR 2024&ndash;2025, ICCV 2025, NeurIPS 2025, AAAI 2025, ACL 2025, ICASSP 2023&ndash;2025, ASRU 2025, ECCV 2024, INTERSPEECH 2023&ndash;2024, DCASE 2024, EMNLP 2023, MLSP 2023</li>
+                            </ul>
+                            <strong>Special Session &amp; Challenge Organizer:</strong>
+                            <ul>
+                                <li><a href="https://dcase.community/challenge2024/task-language-queried-audio-source-separation">&ldquo;Language-Queried Audio Source Separation&rdquo;</a> at DCASE Challenge 2024</li>
+                                <li><a href="https://2024.ieeemlsp.org/498-2/">&ldquo;Generative AI for Media Generation&rdquo;</a> at MLSP 2024</li>
+                                <li><a href="https://cmsworkshops.com/EUSIPCO2023/view_session.php?SessionID=1060">&ldquo;Multimodal Learning for Audio and Language&rdquo;</a> at EUSIPCO 2023</li>
+                            </ul>
 
                         </td>
                     </tr>
                 </table>
 
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td><br>
-                        <p align="right"><font size="2">
-                            Template credits: <a href="https://unnat.github.io/">Unnat</a>
-                        </font></p></td>
-                </tr>
-                </tbody>
-            </table>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td>
+                            <heading>Teaching Experience</heading><br><br>
+                            <ul>
+                                <li>COM3025 - Deep Learning and Advanced AI, University of Surrey, 2021 (w. <a href="https://www.surrey.ac.uk/people/h-lilian-tang">Prof. Lilian H. Tang</a>)</li>
+                                <li>COM2028 - Artificial Intelligence, University of Surrey, 2021, 2022 (w. <a href="https://www.surrey.ac.uk/people/h-lilian-tang">Prof. Lilian H. Tang</a>)</li>
+                            </ul>
 
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td>
+                            <heading>Mentoring</heading><br><br>
+                            <strong>Research Interns at Meta:</strong>
+                            <ul>
+                                <li><a href="https://scholar.google.com/citations?user=UqBl_VMAAAAJ">Xingjian Du</a>, 2026</li>
+                                <li><a href="https://scholar.google.com/citations?user=60uamz4AAAAJ">Yuancheng Wang</a>, Diffusion Speech Tokenizers, 2025</li>
+                                <li><a href="https://scholar.google.com/citations?user=eUiG0O0AAAAJ">Junyi Ao</a>, Speaking while Thinking in Spoken LLMs, 2025</li>
+                            </ul>
+                            <strong>Research Interns at Stability AI:</strong>
+                            <ul>
+                                <li><a href="https://scholar.google.com/citations?user=WNiojyAAAAAJ">Dongchao Yang</a>, Audio-Text LLMs Pretraining, 2024</li>
+                                <li><a href="https://scholar.google.com/citations?user=RyQKjjEAAAAJ">Yin-Jyun Luo</a>, Self-supervised Learning in Audio Codecs, 2024</li>
+                            </ul>
+
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td>
+                            <heading>Invited Talks and Guest Lectures</heading><br><br>
+                            <ul>
+                                <li>&ldquo;Diffusion Models for Audio&rdquo; (Guest Lecture), University of Cambridge, 3 Jun 2026</li>
+                                <li><a href="https://events.teams.microsoft.com/event/0c414a2d-2847-4195-b3b6-e7d7ba89626a@6b902693-1074-40aa-9e21-d89446a2ebb5">&ldquo;Audio Processing with Natural Language Intelligence&rdquo;</a>, IEEE SPS Early-Career Seminar, 27 May 2026</li>
+                            </ul>
+
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tbody>
+                    <tr>
+                        <td><br>
+                            <p align="right"><font size="2">
+                                Template credits: <a href="https://unnat.github.io/">Unnat</a>
+                            </font></p></td>
+                    </tr>
+                    </tbody>
+                </table>
         </td>
     </tr>
 </table>
 </body>
 </html>
-
